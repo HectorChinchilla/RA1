@@ -1,0 +1,13 @@
+@mixin crea-caja($color: #26619C, $name: lapislazuli) {
+    .box-#{$name} {
+        @content;
+        box-sizing: border-box;
+        background-color: $color;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
