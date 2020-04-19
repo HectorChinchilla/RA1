@@ -90,7 +90,7 @@ img {
 
 /* Para imagenes terrestres */
 
-.dos {
+.cucu {
     width: 250px;
     height: 150px;
     position: relative;
@@ -100,7 +100,7 @@ img {
 
 /* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
 
-.dos:hover {
+.cucu:hover {
     animation: 1s vaiven infinite;
     animation-timing-function: linear;
 }
@@ -345,4 +345,19 @@ caption {
 .tw {
     width: 70px;
     height: 70px;
+}
+
+.cucu {
+    width: 400px;
+    height: 200px;
+}
+
+.vibrador {
+    width: 400px;
+    height: 200px;
+}
+
+.cartel {
+    width: 400px;
+    height: 200px;
 }
