@@ -1,12 +1,3 @@
-/* .uno {
-    display: inline;
-    padding: 1rem;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(1, 500px);
-    font-size: 5rem;
-} */
-
 #click div {
     background-color: rgb(106, 99, 112);
     color: rgb(43, 172, 165);
@@ -59,26 +50,6 @@ img {
     line-height: 200px;
 }
 
-
-/* Asignamos la animación mediante pseudoclases cuando haya una interacción del usuario */
-
-#click:hover {
-    animation: 1s click 1;
-}
-
-
-/* Creamos la animación (con keyframes) */
-
-@keyframes click {
-    25%,
-    75% {
-        transform: scale(.8);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
 .footer {
     position: absolute;
     width: 100%;
@@ -88,7 +59,7 @@ img {
 }
 
 
-/* Para imagenes terrestres */
+/* Para imagenes terrestres con la clase .cucu */
 
 .cucu {
     width: 250px;
@@ -125,7 +96,7 @@ img {
 }
 
 
-/* Para imagenes cartel */
+/* Para imagenes de transporte maritimo con la clase .cartel */
 
 .cartel {
     width: 200px;
@@ -164,7 +135,7 @@ img {
 }
 
 
-/* Para imagenes Vibrador */
+/* Para imagenes  aereas con la clase.vibrador */
 
 .vibrador {
     width: 200px;
@@ -216,45 +187,9 @@ img {
     }
 }
 
-.sombra_externa:hover {
-    box-shadow: 2px 3px 9px black;
-}
-
-.sombra_difuminada {
-    transition: all 300ms;
-}
-
-.sombra_difuminada:hover {
-    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, .7);
-}
-
-.triangulo_fijo {
-    transition: all 0.3s;
-}
-
-.triangulo_fijo:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-style: solid;
-    border-width: 0px 15px 15px 15px;
-    border-color: transparent transparent #a8cf45 transparent;
-    transition: all 0.3s;
-}
-
-.triangulo_fijo:hover {
-    transform: translateY(15px);
-}
-
-.triangulo_fijo:hover:before {
-    top: -13px;
-}
-
 #na a:hover {
-    background-color: rgb(89, 214, 85);
-    color: #242928;
+    background-color: rgb(36, 214, 36);
+    color: rgb(20, 20, 19);
 }
 
 #na .icon {
@@ -281,7 +216,7 @@ img {
 }
 
 
-/* EJEMPLO F */
+/* Para la imagen de la opcion de medios de transporte terrestre en el index */
 
 .girar {
     transition: transform 2s ease;
@@ -292,7 +227,7 @@ img {
 }
 
 
-/* EJEMPLO E */
+/* Para la imagen de la opcion de medios de transporte aereos en el index */
 
 .radio {
     transition: border-radius 2s ease;
@@ -300,6 +235,13 @@ img {
 
 .radio:hover {
     border-radius: 55px;
+}
+
+
+/* Para la imagen de la opcion de medios de transporte maritimos en el index */
+
+.baja:hover {
+    transform: translateY(15px);
 }
 
 #table {
